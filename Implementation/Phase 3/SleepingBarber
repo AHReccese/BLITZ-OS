@@ -1,0 +1,337 @@
+Script started on 2021-04-28 00:07:41+0400
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p3[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34mp3[00m$ make
+kpl Main -unsafe
+asm Main.s
+lddd System.o List.o Thread.o Switch.o Synch.o Main.o Runtime.o -o os
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p3[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34mp3[00m$ blitz -g os
+Beginning execution...
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+     (Customer 0)  has entered the lobby.
+     (Customer 0) has Haircut status : FALSE
+Customer with id:0 Got a chair from waiting room's chair.
+     (Customer 1)  has entered the lobby.
+     (Customer 1) has Haircut status : FALSE
+Customer with id:1 Got a chair from waiting room's chair.
+     (Customer 2)  has entered the lobby.
+     (Customer 2) has Haircut status : FALSE
+Customer with id:2 Got a chair from waiting room's chair.
+     (Customer 3)  has entered the lobby.
+     (Customer 3) has Haircut status : FALSE
+Customer with id:3 Got a chair from waiting room's chair.
+     (Customer 4)  has entered the lobby.
+     (Customer 4) has Haircut status : FALSE
+Customer with id:4 Got a chair from waiting room's chair.
+     (Customer 5)  has entered the lobby.
+     (Customer 5) has Haircut status : FALSE
+     (Customer 5)  leaves. (Waiting room full)
+     (Customer 6)  has entered the lobby.
+     (Customer 6) has Haircut status : FALSE
+     (Customer 6)  leaves. (Waiting room full)
+     (Customer 7)  has entered the lobby.
+     (Customer 7) has Haircut status : FALSE
+     (Customer 7)  leaves. (Waiting room full)
+     (Customer 8)  has entered the lobby.
+     (Customer 8) has Haircut status : FALSE
+     (Customer 8)  leaves. (Waiting room full)
+     (Customer 9)  has entered the lobby.
+     (Customer 9) has Haircut status : FALSE
+     (Customer 9)  leaves. (Waiting room full)
+Barber: checks for customer
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 0) gets a haircut.
+     (Customer 0) has Haircut status : TRUE
+     (Customer 10)  has entered the lobby.
+     (Customer 10) has Haircut status : FALSE
+Customer with id:10 Got a chair from waiting room's chair.
+     (Customer 11)  has entered the lobby.
+     (Customer 11) has Haircut status : FALSE
+     (Customer 11)  leaves. (Waiting room full)
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 1) gets a haircut.
+     (Customer 1) has Haircut status : TRUE
+     (Customer 12)  has entered the lobby.
+     (Customer 12) has Haircut status : FALSE
+Customer with id:12 Got a chair from waiting room's chair.
+     (Customer 13)  has entered the lobby.
+     (Customer 13) has Haircut status : FALSE
+     (Customer 13)  leaves. (Waiting room full)
+Barber: Done cutting hair
+Barber: checks for customer
+     (Customer 14)  has entered the lobby.
+     (Customer 14) has Haircut status : FALSE
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 2) gets a haircut.
+     (Customer 2) has Haircut status : TRUE
+Customer with id:14 Got a chair from waiting room's chair.
+     (Customer 15)  has entered the lobby.
+     (Customer 15) has Haircut status : FALSE
+     (Customer 15)  leaves. (Waiting room full)
+     (Customer 16)  has entered the lobby.
+     (Customer 16) has Haircut status : FALSE
+     (Customer 16)  leaves. (Waiting room full)
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 3) gets a haircut.
+     (Customer 3) has Haircut status : TRUE
+     (Customer 17)  has entered the lobby.
+     (Customer 17) has Haircut status : FALSE
+Customer with id:17 Got a chair from waiting room's chair.
+     (Customer 18)  has entered the lobby.
+     (Customer 18) has Haircut status : FALSE
+     (Customer 18)  leaves. (Waiting room full)
+Barber: Done cutting hair
+Barber: checks for customer
+     (Customer 19)  has entered the lobby.
+     (Customer 19) has Haircut status : FALSE
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 4) gets a haircut.
+     (Customer 4) has Haircut status : TRUE
+Customer with id:19 Got a chair from waiting room's chair.
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 20)  has entered the lobby.
+     (Customer 20) has Haircut status : FALSE
+Customer with id:20 Got a chair from waiting room's chair.
+     (Customer 10) gets a haircut.
+     (Customer 10) has Haircut status : TRUE
+     (Customer 21)  has entered the lobby.
+     (Customer 21) has Haircut status : FALSE
+     (Customer 21)  leaves. (Waiting room full)
+     (Customer 22)  has entered the lobby.
+     (Customer 22) has Haircut status : FALSE
+     (Customer 22)  leaves. (Waiting room full)
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 12) gets a haircut.
+     (Customer 12) has Haircut status : TRUE
+     (Customer 23)  has entered the lobby.
+     (Customer 23) has Haircut status : FALSE
+Customer with id:23 Got a chair from waiting room's chair.
+     (Customer 24)  has entered the lobby.
+     (Customer 24) has Haircut status : FALSE
+     (Customer 24)  leaves. (Waiting room full)
+Barber: Done cutting hair
+Barber: checks for customer
+     (Customer 25)  has entered the lobby.
+     (Customer 25) has Haircut status : FALSE
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 14) gets a haircut.
+     (Customer 14) has Haircut status : TRUE
+Customer with id:25 Got a chair from waiting room's chair.
+     (Customer 26)  has entered the lobby.
+     (Customer 26) has Haircut status : FALSE
+     (Customer 26)  leaves. (Waiting room full)
+     (Customer 27)  has entered the lobby.
+     (Customer 27) has Haircut status : FALSE
+     (Customer 27)  leaves. (Waiting room full)
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 28)  has entered the lobby.
+     (Customer 28) has Haircut status : FALSE
+Customer with id:28 Got a chair from waiting room's chair.
+     (Customer 17) gets a haircut.
+     (Customer 17) has Haircut status : TRUE
+     (Customer 29)  has entered the lobby.
+     (Customer 29) has Haircut status : FALSE
+     (Customer 29)  leaves. (Waiting room full)
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 19) gets a haircut.
+     (Customer 19) has Haircut status : TRUE
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 4 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 20) gets a haircut.
+     (Customer 20) has Haircut status : TRUE
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 3 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 23) gets a haircut.
+     (Customer 23) has Haircut status : TRUE
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 2 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 25) gets a haircut.
+     (Customer 25) has Haircut status : TRUE
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 1 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 28) gets a haircut.
+     (Customer 28) has Haircut status : TRUE
+Barber: Done cutting hair
+Barber: checks for customer
+WasteTime Timeout.
+     (Customer 30)  has entered the lobby.
+     (Customer 30) has Haircut status : FALSE
+Customer with id:30 Got a chair from waiting room's chair.
+Barber: Finds 1 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 30) gets a haircut.
+     (Customer 30) has Haircut status : TRUE
+     (Customer 31)  has entered the lobby.
+     (Customer 31) has Haircut status : FALSE
+Customer with id:31 Got a chair from waiting room's chair.
+     (Customer 32)  has entered the lobby.
+     (Customer 32) has Haircut status : FALSE
+Customer with id:32 Got a chair from waiting room's chair.
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 2 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 31) gets a haircut.
+     (Customer 31) has Haircut status : TRUE
+     (Customer 33)  has entered the lobby.
+     (Customer 33) has Haircut status : FALSE
+Customer with id:33 Got a chair from waiting room's chair.
+     (Customer 34)  has entered the lobby.
+     (Customer 34) has Haircut status : FALSE
+Customer with id:34 Got a chair from waiting room's chair.
+Barber: Done cutting hair
+Barber: checks for customer
+     (Customer 35)  has entered the lobby.
+     (Customer 35) has Haircut status : FALSE
+Barber: Finds 3 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 32) gets a haircut.
+     (Customer 32) has Haircut status : TRUE
+Customer with id:35 Got a chair from waiting room's chair.
+     (Customer 36)  has entered the lobby.
+     (Customer 36) has Haircut status : FALSE
+Customer with id:36 Got a chair from waiting room's chair.
+     (Customer 37)  has entered the lobby.
+     (Customer 37) has Haircut status : FALSE
+Customer with id:37 Got a chair from waiting room's chair.
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 38)  has entered the lobby.
+     (Customer 38) has Haircut status : FALSE
+Customer with id:38 Got a chair from waiting room's chair.
+     (Customer 33) gets a haircut.
+     (Customer 33) has Haircut status : TRUE
+     (Customer 39)  has entered the lobby.
+     (Customer 39) has Haircut status : FALSE
+     (Customer 39)  leaves. (Waiting room full)
+     (Customer 40)  has entered the lobby.
+     (Customer 40) has Haircut status : FALSE
+     (Customer 40)  leaves. (Waiting room full)
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 34) gets a haircut.
+     (Customer 34) has Haircut status : TRUE
+     (Customer 41)  has entered the lobby.
+     (Customer 41) has Haircut status : FALSE
+Customer with id:41 Got a chair from waiting room's chair.
+     (Customer 42)  has entered the lobby.
+     (Customer 42) has Haircut status : FALSE
+     (Customer 42)  leaves. (Waiting room full)
+Barber: Done cutting hair
+     (Customer 43)  has entered the lobby.
+     (Customer 43) has Haircut status : FALSE
+     (Customer 43)  leaves. (Waiting room full)
+Barber: checks for customer
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 35) gets a haircut.
+     (Customer 35) has Haircut status : TRUE
+     (Customer 44)  has entered the lobby.
+     (Customer 44) has Haircut status : FALSE
+Customer with id:44 Got a chair from waiting room's chair.
+     (Customer 45)  has entered the lobby.
+     (Customer 45) has Haircut status : FALSE
+     (Customer 45)  leaves. (Waiting room full)
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 36) gets a haircut.
+     (Customer 36) has Haircut status : TRUE
+     (Customer 46)  has entered the lobby.
+     (Customer 46) has Haircut status : FALSE
+Customer with id:46 Got a chair from waiting room's chair.
+     (Customer 47)  has entered the lobby.
+     (Customer 47) has Haircut status : FALSE
+     (Customer 47)  leaves. (Waiting room full)
+Barber: Done cutting hair
+Barber: checks for customer
+     (Customer 48)  has entered the lobby.
+     (Customer 48) has Haircut status : FALSE
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 37) gets a haircut.
+     (Customer 37) has Haircut status : TRUE
+Customer with id:48 Got a chair from waiting room's chair.
+     (Customer 49)  has entered the lobby.
+     (Customer 49) has Haircut status : FALSE
+     (Customer 49)  leaves. (Waiting room full)
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 5 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 38) gets a haircut.
+     (Customer 38) has Haircut status : TRUE
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 4 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 41) gets a haircut.
+     (Customer 41) has Haircut status : TRUE
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 3 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 44) gets a haircut.
+     (Customer 44) has Haircut status : TRUE
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 2 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 46) gets a haircut.
+     (Customer 46) has Haircut status : TRUE
+Barber: Done cutting hair
+Barber: checks for customer
+Barber: Finds 1 customers waiting.
+Barber: Begins cutting hair.
+     (Customer 48) gets a haircut.
+     (Customer 48) has Haircut status : TRUE
+Barber: Done cutting hair
+Barber: checks for customer
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+Done!  The next instruction to execute will be:
+000EC8: 09000000       ret     
+Number of Disk Reads    = 0
+Number of Disk Writes   = 0
+Instructions Executed   = 19084121
+Time Spent Sleeping     = 0
+    Total Elapsed Time  = 19084121
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p3[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34mp3[00m$ exit
+exit
+
+Script done on 2021-04-28 00:07:50+0400

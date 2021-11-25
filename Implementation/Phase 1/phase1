@@ -1,0 +1,370 @@
+Script started on 2021-03-07 19:34:13+0400
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ asm Hello.s
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ lddd Hello.o -o Hello
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ blitz H[K-g hel[K[K[KHello
+Beginning execution...
+Hello, world!
+
+****  A 'debug' instruction was encountered  *****
+Done!  The next instruction to execute will be:
+000080: A1FFFFB8       jmp     0xFFFFB8		! targetAddr = main
+
+Entering machine-level debugger...
+======================================================
+=====                                            =====
+=====         The BLITZ Machine Emulator         =====
+=====                                            =====
+=====  Copyright 2001-2007, Harry H. Porter III  =====
+=====                                            =====
+======================================================
+
+Enter a command at the prompt.  Type 'quit' to exit or 'help' for
+info about commands.
+> q
+Number of Disk Reads    = 0
+Number of Disk Writes   = 0
+Instructions Executed   = 1705
+Time Spent Sleeping     = 0
+    Total Elapsed Time  = 1705
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ asm Echo.s
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ lddd Echo.o -o Echo.[K
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ blitz Echo 
+======================================================
+=====                                            =====
+=====         The BLITZ Machine Emulator         =====
+=====                                            =====
+=====  Copyright 2001-2007, Harry H. Porter III  =====
+=====                                            =====
+======================================================
+
+Enter a command at the prompt.  Type 'quit' to exit or 'help' for
+info about commands.
+> g
+Beginning execution...
+abcd  
+abcd
+this is a test
+this is a test
+q
+q
+****  A 'debug' instruction was encountered  *****
+Done!  The next instruction to execute will be:
+                   cont:
+0000A4: A1FFFFAC       jmp     0xFFFFAC		! targetAddr = loop
+> q
+Number of Disk Reads    = 0
+Number of Disk Writes   = 0
+Instructions Executed   = 132458351
+Time Spent Sleeping     = 0
+    Total Elapsed Time  = 132458351
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ kpl -unsafe system[K[K[K[K[K[KSt[Kystem.[K
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ asm St[Kystem.s
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ kpl HelloWorld.[K
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ asm HelloWorld.s
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ asm Runtime.s 
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ lddd Runtime.o System.o HelloWorld.o -o HelloWorld.[K
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ kpl System.[K
+System.h:30: *****  ERROR at PTR: Using 'ptr to void' is unsafe; you must compile with the 'unsafe' option if you wish to do this
+System.h:31: *****  ERROR at PTR: Using 'ptr to void' is unsafe; you must compile with the 'unsafe' option if you wish to do this
+System.h:32: *****  ERROR at PTR: Using 'ptr to void' is unsafe; you must compile with the 'unsafe' option if you wish to do this
+System.c:64: *****  ERROR at "+": Adding ptrs to ints is an unsafe operation; you must compile with the 'unsafe' option if you wish to do this
+System.c:92: *****  ERROR at PTR: Using 'ptr to void' is unsafe; you must compile with the 'unsafe' option if you wish to do this
+System.c:100: *****  ERROR at AS_PTR_TO: Using 'asPtrTo' is an unsafe operation; you must compile with the 'unsafe' option if you wish to do this
+System.c:113: *****  ERROR at "&": Taking the address of field within a record or object is an unsafe operation; you must compile with the 'unsafe' option if you wish to do this
+System.c:113: *****  ERROR at "&": The expression on the righthand side of this assignment does not have the correct type
+System.c:113:              The type of the expression is: ptr to ptr to DISPATCH_TABLE
+System.c:92:              The expected type is: ptr to ptr to void
+System.c:120: *****  ERROR at "+": Adding ptrs to ints is an unsafe operation; you must compile with the 'unsafe' option if you wish to do this
+System.c:149: *****  ERROR at AS_PTR_TO: Using 'asPtrTo' is an unsafe operation; you must compile with the 'unsafe' option if you wish to do this
+System.c:207: *****  ERROR at "&": Taking the address of an element within an array is an unsafe operation; you must compile with the 'unsafe' option if you wish to do this
+System.c:208: *****  ERROR at AS_PTR_TO: Using 'asPtrTo' is an unsafe operation; you must compile with the 'unsafe' option if you wish to do this
+System.c:208: *****  ERROR at AS_PTR_TO: Using 'asPtrTo' is an unsafe operation; you must compile with the 'unsafe' option if you wish to do this
+System.c:212: *****  ERROR at "+": Adding ptrs to ints is an unsafe operation; you must compile with the 'unsafe' option if you wish to do this
+System.c:246: *****  ERROR at AS_PTR_TO: Using 'asPtrTo' is an unsafe operation; you must compile with the 'unsafe' option if you wish to do this
+System.c:253: *****  ERROR at AS_PTR_TO: Using 'asPtrTo' is an unsafe operation; you must compile with the 'unsafe' option if you wish to do this
+System.c:275: *****  ERROR at AS_PTR_TO: Using 'asPtrTo' is an unsafe operation; you must compile with the 'unsafe' option if you wish to do this
+
+**********  17 errors detected!  **********
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ blitz -g HelloWorld
+Beginning execution...
+====================  KPL PROGRAM STARTING  ====================
+Hello, world...
+
+====================  KPL PROGRAM TERMINATION  ====================
+
+****  A 'debug' instruction was encountered  *****
+Done!  The next instruction to execute will be:
+000D98: C0100000       sethi   0x0000,r1	! 0x00000DA8 = 3496 (noGoMessage)
+
+Entering machine-level debugger...
+======================================================
+=====                                            =====
+=====         The BLITZ Machine Emulator         =====
+=====                                            =====
+=====  Copyright 2001-2007, Harry H. Porter III  =====
+=====                                            =====
+======================================================
+
+Enter a command at the prompt.  Type 'quit' to exit or 'help' for
+info about commands.
+> g
+Beginning execution...
+
+The KPL program has terminated; you may not continue!
+
+****  A 'debug' instruction was encountered  *****
+Done!  The next instruction to execute will be:
+000D98: C0100000       sethi   0x0000,r1	! 0x00000DA8 = 3496 (noGoMessage)
+> q
+Number of Disk Reads    = 0
+Number of Disk Writes   = 0
+Instructions Executed   = 1296
+Time Spent Sleeping     = 0
+    Total Elapsed Time  = 1296
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ nno[K[Kano HelloWorld.c
+[?1049h[22;0;0t[1;34r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[32;51H(B[0;7m[ Reading File ](B[m[32;50H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                       HelloWorld.c                                                 [1;115H(B[m[33d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[34d(B[0;7m^X(B[m Exit[34;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[32d[3d[39;49m(B[mcode Hello[5;3H-- This is the (B[0;1m[33m"hello world"[39m(B[m program, (B[0;1m[33mfor[39m(B[m use in Project 1.[7;3Hfunction main ()[8;7Hprint ((B[0;1m[33m"Hello, world...\n"[39m(B[m)[9;7H--foo (10)[10;5HendFunction[12;3Hfunction foo (x: [32mint[39m(B[m)[13;7Hbar (x+1)[14;5HendFunction[16;3Hfunction bar (a: [32mint[39m(B[m)[17;5Hvar b: [32mint[18;7H[39m(B[mb = a + 1[19;7Hprint ((B[0;1m[33m"The value of b is "[39m(B[m)[20;7HprintInt (b)[21;7Hnl ()[22;7Hdebug[23;7Hbar (b)[24;5HendFunction[26dendCode[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l-[?12l[?25h[?25l[1;107H(B[0;7mModified(B[m[9;7H[1P-[?12l[?25h[?25l[1P[?12l[?25h[?25l[1;115H[1;107H(B[0;7m        (B[m[32;52H(B[0;7mWrote 24 lines ](B[m[9;7H[?12l[?25h[?25l[32d[J[34;116H[?12l[?25h[34;1H[?1049l[23;0;0t[?1l>(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ blitz -g HelloWorld
+Beginning execution...
+====================  KPL PROGRAM STARTING  ====================
+Hello, world...
+
+====================  KPL PROGRAM TERMINATION  ====================
+
+****  A 'debug' instruction was encountered  *****
+Done!  The next instruction to execute will be:
+000D98: C0100000       sethi   0x0000,r1	! 0x00000DA8 = 3496 (noGoMessage)
+
+Entering machine-level debugger...
+======================================================
+=====                                            =====
+=====         The BLITZ Machine Emulator         =====
+=====                                            =====
+=====  Copyright 2001-2007, Harry H. Porter III  =====
+=====                                            =====
+======================================================
+
+Enter a command at the prompt.  Type 'quit' to exit or 'help' for
+info about commands.
+> help
+===========================================================================
+This program accepts commands typed into the terminal.  Each command
+should be typed without any arguments; the commands will prompt for
+arguments when needed.  Case is not significant.  Some abbreviations
+are allowed, as shown.  Typing control-C will halt execution.
+
+The available commands are:
+
+  quit    - Terminate this program
+  q         
+  help    - Produce this display
+  h         
+  info    - Display the current state of the machine
+  i         
+  dumpMem - Display the contents of memory
+  dm        
+  setmem  - Used to alter memory contents
+  fmem    - Display floating point values from memory
+  go      - Begin or resume BLITZ instruction execution
+  g         
+  step    - Single step; execute one machine-level instruction
+  s         
+  t       - Single step; execute one KPL statement
+  u       - Execute continuously until next KPL call, send, or return statement
+  stepn   - Execute N machine-level instructions
+  r       - Display all the integer registers
+  r1      - Change the value of register r1
+   ...       
+  r15     - Change the value of register r15
+  float   - Display all the floating-point registers
+  f         
+  f0      - Change the value of floating-point register f0
+   ...       
+  f15     - Change the value of floating-point register f15
+  dis     - Disassemble several instructions
+  d       - Disassemble several instructions from the current location
+  hex     - Convert a user-entered hex number into decimal and ascii
+  dec     - Convert a user-entered decimal number into hex and ascii
+  ascii   - Convert a user-entered ascii char into hex and decimal
+  setI    - Set the I bit in the Status Register
+  setS    - Set the S bit in the Status Register
+  setP    - Set the P bit in the Status Register
+  setZ    - Set the Z bit in the Status Register
+  setV    - Set the V bit in the Status Register
+  setN    - Set the N bit in the Status Register
+  clearI  - Clear the I bit in the Status Register
+  clearS  - Clear the S bit in the Status Register
+  clearP  - Clear the P bit in the Status Register
+  clearZ  - Clear the Z bit in the Status Register
+  clearV  - Clear the V bit in the Status Register
+  clearN  - Clear the N bit in the Status Register
+  setPC   - Set the Program Counter (PC)
+  setPTBR - Set the Page Table Base Register (PTBR)
+  setPTLR - Set the Page Table Length Register (PTLR)
+  pt      - Display the Page Table
+  trans   - Perform page table translation on a single address
+  cancel  - Cancel all pending interrupts
+  labels  - Display the label table
+  find    - Find a label by name
+  find2   - Find a label by value
+  add     - Add a new label, inserting it into the indexes
+  reset   - Reset the machine state and re-read the a.out file
+  io      - Display the state of the I/O devices
+  read    - Read a word from memory-mapped I/O region
+  write   - Write a word to memory-mapped I/O region
+  raw     - Switch serial input to raw mode
+  cooked  - Switch serial input to cooked mode
+  input   - Enter input characters for future serial I/O input
+  format  - Create and format a BLITZ disk file
+  sim     - Display the current simulation constants
+  stack   - Display the KPL calling stack
+  st        
+  frame   - Display the current activation frame
+  fr        
+  up      - Move up in the activation frame stack
+  down    - Move down in the activation frame stack
+
+===========================================================================
+> go
+Beginning execution...
+
+The KPL program has terminated; you may not continue!
+
+****  A 'debug' instruction was encountered  *****
+Done!  The next instruction to execute will be:
+000D98: C0100000       sethi   0x0000,r1	! 0x00000DA8 = 3496 (noGoMessage)
+> step
+Done!  The next instruction to execute will be:
+000D9C: C1100DA8       setlo   0x0DA8,r1
+> t
+
+The KPL program has terminated; you may not continue!
+
+****  A 'debug' instruction was encountered  *****
+About to execute RETURN statement                 ***Invalid FP***
+
+> reset
+Resetting all CPU registers and re-reading file "HelloWorld"...
+> info
+============================
+Memory size = 0x01000000     ( decimal: 16777216    )
+Page size   = 0x00002000     ( decimal: 8192        )
+.text Segment
+    addr    = 0x00000000     ( decimal: 0           )
+    size    = 0x00004000     ( decimal: 16384       )
+.data Segment
+    addr    = 0x00004000     ( decimal: 16384       )
+    size    = 0x00006000     ( decimal: 24576       )
+.bss Segment
+    addr    = 0x0000A000     ( decimal: 40960       )
+    size    = 0x00000000     ( decimal: 0           )
+=====  USER REGISTERS  =====
+  r0  = 0x00000000     ( decimal: 0 )
+  r1  = 0x00000000     ( decimal: 0 )
+  r2  = 0x00000000     ( decimal: 0 )
+  r3  = 0x00000000     ( decimal: 0 )
+  r4  = 0x00000000     ( decimal: 0 )
+  r5  = 0x00000000     ( decimal: 0 )
+  r6  = 0x00000000     ( decimal: 0 )
+  r7  = 0x00000000     ( decimal: 0 )
+  r8  = 0x00000000     ( decimal: 0 )
+  r9  = 0x00000000     ( decimal: 0 )
+  r10 = 0x00000000     ( decimal: 0 )
+  r11 = 0x00000000     ( decimal: 0 )
+  r12 = 0x00000000     ( decimal: 0 )
+  r13 = 0x00000000     ( decimal: 0 )
+  r14 = 0x00000000     ( decimal: 0 )
+  r15 = 0x00000000     ( decimal: 0 )
+=====  SYSTEM REGISTERS  =====
+  r0  = 0x00000000     ( decimal: 0 )
+  r1  = 0x00000000     ( decimal: 0 )
+  r2  = 0x00000000     ( decimal: 0 )
+  r3  = 0x00000000     ( decimal: 0 )
+  r4  = 0x00000000     ( decimal: 0 )
+  r5  = 0x00000000     ( decimal: 0 )
+  r6  = 0x00000000     ( decimal: 0 )
+  r7  = 0x00000000     ( decimal: 0 )
+  r8  = 0x00000000     ( decimal: 0 )
+  r9  = 0x00000000     ( decimal: 0 )
+  r10 = 0x00000000     ( decimal: 0 )
+  r11 = 0x00000000     ( decimal: 0 )
+  r12 = 0x00000000     ( decimal: 0 )
+  r13 = 0x00000000     ( decimal: 0 )
+  r14 = 0x00000000     ( decimal: 0 )
+  r15 = 0x00000000     ( decimal: 0 )
+=====  FLOATING-POINT REGISTERS  =====
+  f0  = 0x00000000 00000000   ( value = 0 )
+  f1  = 0x00000000 00000000   ( value = 0 )
+  f2  = 0x00000000 00000000   ( value = 0 )
+  f3  = 0x00000000 00000000   ( value = 0 )
+  f4  = 0x00000000 00000000   ( value = 0 )
+  f5  = 0x00000000 00000000   ( value = 0 )
+  f6  = 0x00000000 00000000   ( value = 0 )
+  f7  = 0x00000000 00000000   ( value = 0 )
+  f8  = 0x00000000 00000000   ( value = 0 )
+  f9  = 0x00000000 00000000   ( value = 0 )
+  f10 = 0x00000000 00000000   ( value = 0 )
+  f11 = 0x00000000 00000000   ( value = 0 )
+  f12 = 0x00000000 00000000   ( value = 0 )
+  f13 = 0x00000000 00000000   ( value = 0 )
+  f14 = 0x00000000 00000000   ( value = 0 )
+  f15 = 0x00000000 00000000   ( value = 0 )
+======================================
+  PC   = 0x00000000     ( decimal: 0 )
+  PTBR = 0x00000000     ( decimal: 0 )
+  PTLR = 0x00000000     ( decimal: 0 )
+                        ---- ----  ---- ----  ---- ----  --IS PZVN
+  SR   = 0x00000010  =  0000 0000  0000 0000  0000 0000  0001 0000
+           I = 0   Interrupts Disabled
+           S = 1   System Mode
+           P = 0   Paging Disabled
+           Z = 0   Not Zero
+           V = 0   No Overflow
+           N = 0   Not Negative
+==============================
+  Pending Interrupts                = 0x00000002
+    TIMER_INTERRUPT
+  System Trap Number                = 0x00000000
+  Page Invalid Offending Address    = 0x00000000
+  Page Readonly Offending Address   = 0x00000000
+  Time of next timer event          = 5005
+  Time of next disk event           = 2147483647
+  Time of next serial in event      = 0
+  Time of next serial out event     = 2147483647
+    Current Time                    = 0
+    Time of next event              = 0
+    Time Spent Sleeping             = 0
+      Instructions Executed         = 0
+  Number of Disk Reads              = 0
+  Number of Disk Writes             = 0
+==============================
+The next instruction to execute will be:
+                   PowerOnReset:
+                   _entry:
+000000: A1000CD8       jmp     0x000CD8		! targetAddr = RuntimeStartup
+About to execute ***INVLALID HIGH-LEVEL STATEMENT CODE IN REGISTER r10***
+> stack
+   Function/Method            Frame Addr   Execution at...
+   ========================   ==========   =====================
+Bottom of activation frame stack!
+> frame
+=====  Frame number 0 (where StackTop = 0)  =====
+Bottom of activation frame stack!
+Resetting current frame to top of stack!
+> up
+Already at top of stack!
+=====  Frame number 0 (where StackTop = 0)  =====
+Bottom of activation frame stack!
+Resetting current frame to top of stack!
+> down
+=====  Frame number 1 (where StackTop = 0)  =====
+Invalid activation frame stack!  The frame pointer is 0x00000000.
+Resetting current frame to top of stack!
+> q
+Number of Disk Reads    = 0
+Number of Disk Writes   = 0
+Instructions Executed   = 0
+Time Spent Sleeping     = 0
+    Total Elapsed Time  = 0
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p1[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p1[00m$ exit
+exit
+
+Script done on 2021-03-07 19:38:30+0400

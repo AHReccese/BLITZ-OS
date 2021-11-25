@@ -1,0 +1,296 @@
+Script started on 2021-03-24 23:40:59+0400
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p2[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p2[00m$ make
+kpl Main -unsafe
+asm Main.s
+lddd System.o List.o Thread.o Switch.o Synch.o Main.o Runtime.o -o os
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p2[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p2[00m$ makeexitsudo openconnect ck1.selfip.com:443clear[Khistory | grep anaconclear[Kgrep history | naviclear[Kanaconda navigatorexit[Kclear[Kr[1Pexitanaconda navigatorclear[Kgrep history | naviclear[Khistory | grep anaconclear[Ksudo openconnect ck1.selfip.com:443exit[Kmake[Kmakeexitsudo openconnect ck1.selfip.com:443exit[Kmake[Kblockdev [K[K[K[K[K[K[Kitz -g os
+Beginning execution...
+====================  KPL PROGRAM STARTING  ====================
+Example Thread-based Programs...
+Initializing Thread Scheduler...
+
+-- You should see 70 lines, each consecutively numbered. --
+
+LockTester-A = 1
+LockTester-A = 2
+LockTester-B = 3
+LockTester-C = 4
+LockTester-D = 5
+LockTester-E = 6
+LockTester-A = 7
+LockTester-F = 8
+LockTester-G = 9
+LockTester-C = 10
+LockTester-B = 11
+LockTester-D = 12
+LockTester-A = 13
+LockTester-F = 14
+LockTester-E = 15
+LockTester-G = 16
+LockTester-C = 17
+LockTester-D = 18
+LockTester-A = 19
+LockTester-F = 20
+LockTester-B = 21
+LockTester-G = 22
+LockTester-E = 23
+LockTester-C = 24
+LockTester-D = 25
+LockTester-A = 26
+LockTester-F = 27
+LockTester-G = 28
+LockTester-B = 29
+LockTester-C = 30
+LockTester-E = 31
+LockTester-D = 32
+LockTester-A = 33
+LockTester-F = 34
+LockTester-G = 35
+LockTester-C = 36
+LockTester-B = 37
+LockTester-D = 38
+LockTester-A = 39
+LockTester-F = 40
+LockTester-E = 41
+LockTester-G = 42
+LockTester-C = 43
+LockTester-B = 44
+LockTester-D = 45
+LockTester-F = 46
+LockTester-A = 47
+LockTester-G = 48
+LockTester-C = 49
+LockTester-E = 50
+LockTester-B = 51
+LockTester-D = 52
+LockTester-F = 53
+LockTester-A = 54
+LockTester-G = 55
+LockTester-C = 56
+LockTester-E = 57
+LockTester-B = 58
+LockTester-F = 59
+LockTester-D = 60
+LockTester-G = 61
+LockTester-C = 62
+LockTester-E = 63
+LockTester-B = 64
+LockTester-F = 65
+LockTester-G = 66
+LockTester-D = 67
+LockTester-E = 68
+LockTester-B = 69
+LockTester-E = 70
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+Done!  The next instruction to execute will be:
+000EC8: 09000000       ret     
+Number of Disk Reads    = 0
+Number of Disk Writes   = 0
+Instructions Executed   = 419380
+Time Spent Sleeping     = 0
+    Total Elapsed Time  = 419380
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p2[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p2[00m$ make
+kpl Main -unsafe
+asm Main.s
+lddd System.o List.o Thread.o Switch.o Synch.o Main.o Runtime.o -o os
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p2[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p2[00m$ makeblitz -g os
+Beginning execution...
+====================  KPL PROGRAM STARTING  ====================
+Example Thread-based Programs...
+Initializing Thread Scheduler...
+        Producer-A         A
+A       Producer-B             B
+AB      Producer-B             B
+ABB     Producer-B             B
+ABBB    Producer-C                 C
+ABBBC   Consumer-1                               |      A
+BBBC    Consumer-2                               |          B
+BBC     Consumer-3                               |              B
+BC      Producer-D                     D
+BCD     Producer-E                         E
+BCDE    Consumer-1                               |      B
+CDE     Consumer-1                               |      C
+DE      Consumer-2                               |          D
+E       Consumer-3                               |              E
+        Producer-E                         E
+E       Producer-A         A
+EA      Producer-D                     D
+EAD     Producer-C                 C
+EADC    Producer-B             B
+EADCB   Consumer-1                               |      E
+ADCB    Consumer-2                               |          A
+DCB     Consumer-3                               |              D
+CB      Consumer-1                               |      C
+B       Producer-A         A
+BA      Consumer-2                               |          B
+A       Producer-E                         E
+AE      Producer-D                     D
+AED     Producer-C                 C
+AEDC    Consumer-3                               |              A
+EDC     Producer-B             B
+EDCB    Consumer-1                               |      E
+DCB     Consumer-2                               |          D
+CB      Consumer-3                               |              C
+B       Producer-A         A
+BA      Producer-E                         E
+BAE     Consumer-1                               |      B
+AE      Producer-D                     D
+AED     Producer-C                 C
+AEDC    Consumer-3                               |              A
+EDC     Consumer-2                               |          E
+DC      Producer-A         A
+DCA     Consumer-1                               |      D
+CA      Consumer-3                               |              C
+A       Producer-E                         E
+AE      Producer-D                     D
+AED     Consumer-2                               |          A
+ED      Producer-C                 C
+EDC     Consumer-1                               |      E
+DC      Consumer-3                               |              D
+C       Consumer-2                               |          C
+     
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+Done!  The next instruction to execute will be:
+000EC8: 09000000       ret     
+Number of Disk Reads    = 0
+Number of Disk Writes   = 0
+Instructions Executed   = 231579
+Time Spent Sleeping     = 0
+    Total Elapsed Time  = 231579
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p2[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p2[00m$ make
+kpl Main -unsafe
+asm Main.s
+lddd System.o List.o Thread.o Switch.o Synch.o Main.o Runtime.o -o os
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p2[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p2[00m$ makeblitz -g os
+Beginning execution...
+====================  KPL PROGRAM STARTING  ====================
+Example Thread-based Programs...
+Initializing Thread Scheduler...
+Plato
+    Sartre
+        Kant
+            Nietzsche
+                Aristotle
+.   .   .   .   .   
+    .   .   .   .   
+E   .   .   .   .   
+.   .   .   .   .   
+    .   .   .   .   
+E   .   .   .   .   
+E       .   .   .   
+E           .   .   
+E       E   .   .   
+E       E       .   
+E       E           
+.       E           
+.       .           
+        .           
+E       .           
+E                   
+E       E           
+.       E           
+.       .           
+        .           
+E       .           
+E                   
+E       E           
+.       E           
+.       .           
+        .           
+E       .           
+E       .   E       
+E           E       
+.           E       
+.           .       
+            .       
+E           .       
+E                   
+E           E       
+.           E       
+.           .       
+            .       
+E           .       
+E                   
+E           E       
+.           E       
+.           .       
+.       E   .       
+.       E           
+.       E       E   
+.       .       E   
+.       .       .   
+.   E   .       .   
+.   E   .           
+.   E   .       E   
+.   E           E   
+.   .           E   
+.   .           .   
+.               .   
+.   E           .   
+.   E               
+.   E           E   
+.   .           E   
+.   .           .   
+.               .   
+.   E           .   
+.   E               
+.   E           E   
+.   .           E   
+.   .           .   
+.               .   
+.   E           .   
+.   E               
+.   E           E   
+.   .           E   
+.   .           .   
+.               .   
+.   E           .   
+.   E               
+.   E           E   
+.   .           E   
+.   .           .   
+.               .   
+.   E           .   
+.   E               
+.   E           E   
+.   .           E   
+.   .           .   
+.               .   
+.   E           .   
+.   E       E   .   
+.   .       E   .   
+.   .       .   .   
+.   .   E   .   .   
+.   .   E       .   
+.   .   .       .   
+.   .   .   E   .   
+.   .       E   .   
+.   .       .   .   
+.   .           .   
+.   .       E   .   
+.   .       .   .   
+.   .           .   
+.   .       E   .   
+.   .       .   .   
+.   .   E   .   .   
+.   .   .   .   .   
+.   .       .   .   
+.   .   E   .   .   
+.   .   .   .   .   
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+Done!  The next instruction to execute will be:
+000EC8: 09000000       ret     
+Number of Disk Reads    = 0
+Number of Disk Writes   = 0
+Instructions Executed   = 427209
+Time Spent Sleeping     = 0
+    Total Elapsed Time  = 427209
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p2[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34m~/cs333/p2[00m$ exit
+exit
+
+Script done on 2021-03-24 23:42:39+0400

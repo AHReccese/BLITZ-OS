@@ -1,0 +1,263 @@
+Script started on 2021-04-27 23:56:54+0400
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p3[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34mp3[00m$ make
+kpl Main -unsafe
+asm Main.s
+lddd System.o List.o Thread.o Switch.o Synch.o Main.o Runtime.o -o os
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p3[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34mp3[00m$ blitz -g os
+Beginning execution...
+====================  KPL PROGRAM STARTING  ====================
+Initializing Thread Scheduler...
+A (Backgammon) requests 4 number of dices.
+Number of available dices : 8
+A (Backgammon) uses 4 number of dices.
+Number of available dices : 4
+B (Backgammon) requests 4 number of dices.
+Number of available dices : 4
+B (Backgammon) uses 4 number of dices.
+Number of available dices : 0
+C (Risk) requests 5 number of dices.
+Number of available dices : 0
+D (Risk) requests 5 number of dices.
+Number of available dices : 0
+A (Backgammon) releases  4 number of dices.
+Number of available dices : 4
+A (Backgammon) requests 4 number of dices.
+Number of available dices : 4
+A (Backgammon) uses 4 number of dices.
+Number of available dices : 0
+E (Monopoly) requests 2 number of dices.
+Number of available dices : 0
+A (Backgammon) releases  4 number of dices.
+Number of available dices : 4
+F (Monopoly) requests 2 number of dices.
+Number of available dices : 4
+F (Monopoly) uses 2 number of dices.
+Number of available dices : 2
+H (Pictionary) requests 1 number of dices.
+Number of available dices : 2
+H (Pictionary) uses 1 number of dices.
+Number of available dices : 1
+B (Backgammon) releases  4 number of dices.
+Number of available dices : 5
+G (Pictionary) requests 1 number of dices.
+Number of available dices : 5
+G (Pictionary) uses 1 number of dices.
+Number of available dices : 4
+E (Monopoly) uses 2 number of dices.
+Number of available dices : 2
+A (Backgammon) requests 4 number of dices.
+Number of available dices : 2
+F (Monopoly) releases  2 number of dices.
+Number of available dices : 4
+H (Pictionary) releases  1 number of dices.
+Number of available dices : 5
+B (Backgammon) requests 4 number of dices.
+Number of available dices : 5
+B (Backgammon) uses 4 number of dices.
+Number of available dices : 1
+G (Pictionary) releases  1 number of dices.
+Number of available dices : 2
+E (Monopoly) releases  2 number of dices.
+Number of available dices : 4
+F (Monopoly) requests 2 number of dices.
+Number of available dices : 4
+F (Monopoly) uses 2 number of dices.
+Number of available dices : 2
+H (Pictionary) requests 1 number of dices.
+Number of available dices : 2
+H (Pictionary) uses 1 number of dices.
+Number of available dices : 1
+B (Backgammon) releases  4 number of dices.
+Number of available dices : 5
+E (Monopoly) requests 2 number of dices.
+Number of available dices : 5
+E (Monopoly) uses 2 number of dices.
+Number of available dices : 3
+G (Pictionary) requests 1 number of dices.
+Number of available dices : 3
+G (Pictionary) uses 1 number of dices.
+Number of available dices : 2
+F (Monopoly) releases  2 number of dices.
+Number of available dices : 4
+A (Backgammon) uses 4 number of dices.
+Number of available dices : 0
+H (Pictionary) releases  1 number of dices.
+Number of available dices : 1
+B (Backgammon) requests 4 number of dices.
+Number of available dices : 1
+E (Monopoly) releases  2 number of dices.
+Number of available dices : 3
+G (Pictionary) releases  1 number of dices.
+Number of available dices : 4
+F (Monopoly) requests 2 number of dices.
+Number of available dices : 4
+F (Monopoly) uses 2 number of dices.
+Number of available dices : 2
+H (Pictionary) requests 1 number of dices.
+Number of available dices : 2
+H (Pictionary) uses 1 number of dices.
+Number of available dices : 1
+A (Backgammon) releases  4 number of dices.
+Number of available dices : 5
+E (Monopoly) requests 2 number of dices.
+Number of available dices : 5
+E (Monopoly) uses 2 number of dices.
+Number of available dices : 3
+G (Pictionary) requests 1 number of dices.
+Number of available dices : 3
+G (Pictionary) uses 1 number of dices.
+Number of available dices : 2
+F (Monopoly) releases  2 number of dices.
+Number of available dices : 4
+H (Pictionary) releases  1 number of dices.
+Number of available dices : 5
+A (Backgammon) requests 4 number of dices.
+Number of available dices : 5
+A (Backgammon) uses 4 number of dices.
+Number of available dices : 1
+E (Monopoly) releases  2 number of dices.
+Number of available dices : 3
+G (Pictionary) releases  1 number of dices.
+Number of available dices : 4
+B (Backgammon) uses 4 number of dices.
+Number of available dices : 0
+F (Monopoly) requests 2 number of dices.
+Number of available dices : 0
+H (Pictionary) requests 1 number of dices.
+Number of available dices : 0
+A (Backgammon) releases  4 number of dices.
+Number of available dices : 4
+E (Monopoly) requests 2 number of dices.
+Number of available dices : 4
+E (Monopoly) uses 2 number of dices.
+Number of available dices : 2
+G (Pictionary) requests 1 number of dices.
+Number of available dices : 2
+G (Pictionary) uses 1 number of dices.
+Number of available dices : 1
+B (Backgammon) releases  4 number of dices.
+Number of available dices : 5
+A (Backgammon) requests 4 number of dices.
+Number of available dices : 5
+A (Backgammon) uses 4 number of dices.
+Number of available dices : 1
+E (Monopoly) releases  2 number of dices.
+Number of available dices : 3
+H (Pictionary) uses 1 number of dices.
+Number of available dices : 2
+G (Pictionary) releases  1 number of dices.
+Number of available dices : 3
+B (Backgammon) requests 4 number of dices.
+Number of available dices : 3
+A (Backgammon) releases  4 number of dices.
+Number of available dices : 7
+E (Monopoly) requests 2 number of dices.
+Number of available dices : 7
+E (Monopoly) uses 2 number of dices.
+Number of available dices : 5
+F (Monopoly) uses 2 number of dices.
+Number of available dices : 3
+H (Pictionary) releases  1 number of dices.
+Number of available dices : 4
+G (Pictionary) requests 1 number of dices.
+Number of available dices : 4
+G (Pictionary) uses 1 number of dices.
+Number of available dices : 3
+E (Monopoly) releases  2 number of dices.
+Number of available dices : 5
+F (Monopoly) releases  2 number of dices.
+Number of available dices : 7
+D (Risk) uses 5 number of dices.
+Number of available dices : 2
+H (Pictionary) requests 1 number of dices.
+Number of available dices : 2
+H (Pictionary) uses 1 number of dices.
+Number of available dices : 1
+G (Pictionary) releases  1 number of dices.
+Number of available dices : 2
+F (Monopoly) requests 2 number of dices.
+Number of available dices : 2
+F (Monopoly) uses 2 number of dices.
+Number of available dices : 0
+D (Risk) releases  5 number of dices.
+Number of available dices : 5
+H (Pictionary) releases  1 number of dices.
+Number of available dices : 6
+B (Backgammon) uses 4 number of dices.
+Number of available dices : 2
+F (Monopoly) releases  2 number of dices.
+Number of available dices : 4
+D (Risk) requests 5 number of dices.
+Number of available dices : 4
+B (Backgammon) releases  4 number of dices.
+Number of available dices : 8
+B (Backgammon) requests 4 number of dices.
+Number of available dices : 8
+B (Backgammon) uses 4 number of dices.
+Number of available dices : 4
+B (Backgammon) releases  4 number of dices.
+Number of available dices : 8
+C (Risk) uses 5 number of dices.
+Number of available dices : 3
+C (Risk) releases  5 number of dices.
+Number of available dices : 8
+C (Risk) requests 5 number of dices.
+Number of available dices : 8
+C (Risk) uses 5 number of dices.
+Number of available dices : 3
+C (Risk) releases  5 number of dices.
+Number of available dices : 8
+C (Risk) requests 5 number of dices.
+Number of available dices : 8
+C (Risk) uses 5 number of dices.
+Number of available dices : 3
+C (Risk) releases  5 number of dices.
+Number of available dices : 8
+C (Risk) requests 5 number of dices.
+Number of available dices : 8
+C (Risk) uses 5 number of dices.
+Number of available dices : 3
+C (Risk) releases  5 number of dices.
+Number of available dices : 8
+C (Risk) requests 5 number of dices.
+Number of available dices : 8
+C (Risk) uses 5 number of dices.
+Number of available dices : 3
+C (Risk) releases  5 number of dices.
+Number of available dices : 8
+D (Risk) uses 5 number of dices.
+Number of available dices : 3
+D (Risk) releases  5 number of dices.
+Number of available dices : 8
+D (Risk) requests 5 number of dices.
+Number of available dices : 8
+D (Risk) uses 5 number of dices.
+Number of available dices : 3
+D (Risk) releases  5 number of dices.
+Number of available dices : 8
+D (Risk) requests 5 number of dices.
+Number of available dices : 8
+D (Risk) uses 5 number of dices.
+Number of available dices : 3
+D (Risk) releases  5 number of dices.
+Number of available dices : 8
+D (Risk) requests 5 number of dices.
+Number of available dices : 8
+D (Risk) uses 5 number of dices.
+Number of available dices : 3
+D (Risk) releases  5 number of dices.
+Number of available dices : 8
+
+*****  A 'wait' instruction was executed and no more interrupts are scheduled... halting emulation!  *****
+
+Done!  The next instruction to execute will be:
+000EC8: 09000000       ret     
+Number of Disk Reads    = 0
+Number of Disk Writes   = 0
+Instructions Executed   = 489529
+Time Spent Sleeping     = 0
+    Total Elapsed Time  = 489529
+(base) ]0;amirhosein@amirhosein-UX550VD: ~/cs333/p3[01;32mamirhosein@amirhosein-UX550VD[00m:[01;34mp3[00m$ exit
+exit
+
+Script done on 2021-04-27 23:57:29+0400
